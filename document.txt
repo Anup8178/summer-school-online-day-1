@@ -1,0 +1,46 @@
+1. What Each HTML Element Does:
+
+<!DOCTYPE html>      - Declares the document type and version (HTML5).
+<html>               - Root element that wraps the entire HTML page.
+<head>               - Contains meta information like title, character set, favicon.
+<title>              - Sets the title of the page shown in the browser tab.
+<link>               - Used to link external resources like favicon.
+<body>               - Contains all visible content on the page.
+<header>             - Semantic tag representing the top section of the page (title, logo).
+<nav>                - Contains navigation links to move between pages.
+<main>               - Represents the main content area of the page.
+<section>            - Groups related content in a logical section.
+<footer>             - Represents the bottom of the page (footer info).
+<h1> to <h5>         - Headings used to structure content from most to least important.
+<p>                  - Defines paragraphs of text.
+<a>                  - Creates hyperlinks to other pages.
+<img>                - Displays images on the webpage.
+<ul>, <ol>, <li>     - Used to create lists: unordered and ordered.
+<table>, <tr>, <td>  - Used to create and display tabular data.
+<form>               - Used to collect user input and submit it.
+<input>              - Defines various input types (text, email, etc.).
+<textarea>           - Allows multi-line text input.
+<select>, <option>   - Creates a dropdown selection menu.
+
+2. Why Specific Input Types Were Chosen:
+
+- type="text": For collecting basic name or short text info.
+- type="email": Validates that the input is a proper email address format.
+- type="tel": Used for phone numbers with a 10-digit pattern.
+- type="date": Allows users to select a date from a calendar.
+- type="range": Allows selection of a number value using a slider (e.g. satisfaction level).
+- type="checkbox": Lets users choose multiple preferred contact methods.
+- type="radio": Lets users choose only one inquiry type option.
+- <textarea>: Allows users to type longer messages.
+- <select>: Provides a dropdown list to choose one topic from multiple options.
+
+These input types make the form user-friendly, validated, and suitable for various data formats.
+
+3. How Navigation Structure Works:
+
+The navigation uses <nav> and <a> tags to link between the main pages:
+- "Home" links to `portfolio.html`
+- "About" links to `about.html`
+- "Contact" links to `contact.html`
+
+This allows the user to easily move between different sections of the website using clear, clickable links at the top of each page.
