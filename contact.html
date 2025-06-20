@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Form</title>
+  <link rel="icon" href="./OIP.webp">
+</head>
+<body>
+
+  <header>
+    <h1>Contact Us</h1>
+  </header>
+
+  <nav>
+    <a href="portfolio.html">Home</a> |
+    <a href="about.html">About</a> |
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <section>
+      <form action="submit.php" method="post">
+        <!-- Name -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Phone -->
+        <label for="phone">Phone Number (10 digits):</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br><br>
+
+        <!-- Message -->
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" cols="40" required></textarea><br><br>
+
+        <!-- Dropdown select -->
+        <label for="topic">Select a Topic:</label>
+        <select id="topic" name="topic" required>
+          <option value="">--Choose a topic--</option>
+          <option value="feedback">Feedback</option>
+          <option value="partnership">Partnership</option>
+          <option value="query">General Query</option>
+        </select><br><br>
+
+        <!-- Date input -->
+        <label for="date">Preferred Contact Date:</label>
+        <input type="date" id="date" name="preferred_date" required><br><br>
+
+        <!-- Preferred Contact Method -->
+        <label>Preferred Contact Method:</label><br>
+        <input type="checkbox" id="contact-email" name="preferred_contact[]" value="Email">
+        <label for="contact-email">Email</label><br>
+
+        <input type="checkbox" id="contact-phone" name="preferred_contact[]" value="Phone">
+        <label for="contact-phone">Phone</label><br>
+
+        <input type="checkbox" id="contact-text" name="preferred_contact[]" value="Text">
+        <label for="contact-text">Text</label><br><br>
+
+        <!-- Inquiry Type -->
+        <label>Inquiry Type:</label><br>
+        <input type="radio" id="general" name="inquiry_type" value="General" required>
+        <label for="general">General</label><br>
+
+        <input type="radio" id="business" name="inquiry_type" value="Business">
+        <label for="business">Business</label><br>
+
+        <input type="radio" id="support" name="inquiry_type" value="Support">
+        <label for="support">Support</label><br><br>
+
+        <!-- Range slider -->
+        <label for="satisfaction">Satisfaction Level (1-10):</label>
+        <input type="range" id="satisfaction" name="satisfaction" min="1" max="10"><br><br>
+
+        <!-- Submit -->
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 AnupWebsite. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
